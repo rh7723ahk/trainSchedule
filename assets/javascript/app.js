@@ -30,12 +30,10 @@ $("#addTrainBtn").on("click", function(){
 	
 	trainData.push(newTrain);
 
-	
 	console.log(newTrain.name);
 	console.log(newTrain.destination); 
 	console.log(firstTrainUnix);
 	console.log(newTrain.frequency)
-
 
 	
 	$("#trainNameInput").val("");
@@ -72,6 +70,4 @@ trainData.on("child_added", function(childSnapshot, prevChildKey){
 
 	$("#trainTable > tbody").append("<tr><td>" + tName + "</td><td>" + tDestination + "</td><td>" + tFrequency + "</td><td>" + tArrival + "</td><td>" + tMinutes + "</td></tr>");
 }
-
-
-
+});
