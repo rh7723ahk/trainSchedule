@@ -1,4 +1,3 @@
-$(document).ready(function() {
 
 var config = {
     apiKey: "AIzaSyA4huXPAfaUFDqUhvHAmE3SjspzUJOLYYQ",
@@ -10,7 +9,7 @@ var config = {
   };
   firebase.initializeApp(config);
 
-
+var trainData = fire.base
 $("#addTrainBtn").on("click", function(){
 
 
@@ -69,4 +68,3 @@ trainData.on("child_added", function(childSnapshot, prevChildKey){
 
 	$("#trainTable > tbody").append("<tr><td>" + tName + "</td><td>" + tDestination + "</td><td>" + tFrequency + "</td><td>" + tArrival + "</td><td>" + tMinutes + "</td></tr>");
 });
-
